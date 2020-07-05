@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.title{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 25px;
+    background-color: rgb(207, 207, 207);
+}
+.cont{
+    width: 600px;
+    height: 250px;
+    background-color: rgb(236, 236, 236);
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 4px;
+}
+.badW{
+    width: 98%;
+    height: 40px;
+    margin: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+.bwList{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    color: rgb(224, 55, 55);
+    margin-left: 5px;
+}
+.addWord{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#area{
+    width: 98%;
+    height: 100px;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 4px;
+}
+
