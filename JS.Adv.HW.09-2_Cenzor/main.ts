@@ -44,6 +44,7 @@ add.addEventListener('click', function (): void {
 // при кліку на кнопку reset список стає пустим
 reset.addEventListener('click', function () {
     bwList.textContent = '';
+    area.value ='';
     // масив заборонених слів теж
     arr = [];
 })
@@ -58,9 +59,10 @@ cenzor.addEventListener('click', function () {
         // перевіряється чи є в тексті слова з масиву заборонених
         for (let i = 0; i < arr.length; i++) {
             // створюється регулярний вираз з кожного слова з масиву
-            let regExp = new RegExp(`${arr[i]}`, 'gi');
+            let regExp = new RegExp(` ${arr[i]} `, 'gi');
+            console.log(regExp);
             // дане слово з масиву заміняється зірочками
-            let prohbW = `${arr[i]}`.slice(0, 0).padEnd(`${arr[i]}`.length, '*');
+            let prohbW = ' '+`${arr[i]}`.slice(0, 0).padEnd(`${arr[i]}`.length, '*') + ' ';
             // текст заміняється на новий - з зірочками замість заборонених слів
             area.value = area.value.replace(regExp, prohbW);
         }
